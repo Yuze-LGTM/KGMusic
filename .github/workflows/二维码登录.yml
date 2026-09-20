@@ -27,6 +27,8 @@ permissions:
 jobs:
   run:
     runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
     timeout-minutes: 15
     steps:
       - name: 检出仓库
